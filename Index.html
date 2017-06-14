@@ -8,32 +8,27 @@
     <script src="MainGameScript.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1><small>Incre</small>MENTAL!</h1>
-        <button id="click" type="button" class="btn btn-primary btn-lg btn-block">CLICK ME</button>
-        <hr>
-        <p>
-            Clicks: <span id="total_clicks">0</span><br />
-            Clicks per <small id="time_period">1.00</small> second: <span id="clicks_per_second">0</span>
-        </p>
-        <h3>Buy</h3>
-        <table class="table">
-            <tr>
-                <td>Autoclicker</td>
-                <td><span id="autoclicker_level">lvl 0</span></td>
-                <td><button id="buy_click" type="button" class="btn btn-success">Buy for 1</button></td>
-            </tr>
-            <tr>
-                <td>Speed up by 10%</td>
-                <td><span id="speed_level">lvl 0</span></td>
-                <td><button id="upgrade_speed" type="button" class="btn btn-success">Buy for 100</button></td>
-            </tr>
-            <tr>
-                <td>Increase Clicks Increment</td>
-                <td></td>
-                <td><button id="increase_clicks" type="button" class="btn btn-success">Buy for 100</button></td>
-            </tr>
-        </table>
-    </div>
+
+  <center>  <p>  Dollar: <span id="cookies">0</span>
+    <br> You'r Fidget spinner dealers:
+                  <br>
+                  <div id="stats"></div>
+                  <br>
+    <button class ="button" id="Manni" onclick="cookieClick(1)">Mining</button> <div id="value"></div><br>
+    <button class ="upgrades" id="klikk" onclick="upgrade1()"> Oppgrader pickaxe <br> <span id="kjop">100</span>$</button>
+    <button class ="upgrades" id="miner" onclick="buyWorker()"> Robot Miner <br> <span id="RobotCost">75</span>$</button><br>
+
+
+    <button class ="upgrades" id="miner" onclick="buyWorker(homeless)"> Homeless miner <br> <span id="HomelessCost">10</span>$</button>
+    <button class ="upgrades" id="miner" onclick="buyWorker()"> Coal miner <br> <span id="CoalCost">150</span>$</button><br>
+
+
+    <button class ="upgrades" id="miner" onclick="buyWorker(workingclass)"> Working class miner <br> <span id="WorkingClassCost">20</span>$</button>
+    <button class ="upgrades" id="miner" onclick="buyWorker()"> Gold miner <br> <span id="GoldCost">250</span>$</button><br>
+
+
+    <button class ="upgrades" id="miner" onclick="buyWorker()"> Slave Trader <br> <span id="TraderCost">50</span>$</button>
+    <button class ="upgrades" id="miner" onclick="buyWorker()"> Diamond miner <br> <span id="DiaCost">500</span>$</button><br>
+
 </body>
 </html>
