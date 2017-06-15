@@ -16,9 +16,9 @@ function buyWorker(workertype) {
   var workerUnits = 1;
 
   if (workertype == 'workingclass') {
-   var workerValue = 20;
-   var workerUnits = 3;
-    var workerCost = Math.floor(workerValue * Math.pow(1.1,workingclass));     //works out the cost of this cursor
+   var workerValue = 9999;
+   var workerUnits = 9999;
+    var workerCost = Math.floor(workerValue * Math.pow(2.2,workingclass));     //works out the cost of this cursor
     if(cookies >= workerCost){                                   //checks that the player can afford the cursor
         workingclass = workingclass + workerUnits;                                   //increases number of cursors
     	cookies = cookies - workerCost;                          //removes the cookies spent
@@ -51,7 +51,7 @@ window.setInterval(function(){
 
 }, 800);
 
-window.setInterval(function(){
+window.setInterval(function (){
 
 	cookieClick(workingclass);
 
