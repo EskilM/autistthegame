@@ -8,7 +8,7 @@
     <script src="MainGameScript.js"></script>
 </head>
 <body>
-  <button class ="button" id="Manni" onclick="cookieClick(1)"><img src="img/spinner.jpg" class="spinner" alt="Static Image" data-alt="img/spinner.gif"></button>
+  <button class ="button" onclick="cookieClick(1)"><img src="img/spinner.png" id="spinn" class="spinner"></button>
    <center><p id="center">Dollar: <span id="dollars">0</span><br>
                 Current Spinner: <span id="spinner"></span><br>
                   <br></p></center>
@@ -16,20 +16,20 @@
                   <span id="stats"></span></p>
                   <br><br><br><br><br><br><br><br><br><br><br><br>
     <div id="value"></div><br>
-    <button class ="upgrades" id="klikk" onclick="upgrade1()"> Oppgrader Spinner <br> <span id="kjop">1000</span>$</button>
+    <button class ="upgrades" id="klikk" onclick="upgrade1()"> Upgrade Spinner <br> <span id="kjop">1000</span>$</button>
     <button class ="upgrades" id="miner" onclick="buyWorker('getto')"> Getto Dealer <br> <span id="gettoCost">1500</span>$</button><br>
 
 
     <button class ="upgrades" id="miner" onclick="buyWorker('homeless')"> Homeless Dealer <br> <span id="HomelessCost">10</span>$</button>
-    <button class ="upgrades" id="miner" onclick="buyWorker('')"> Coal miner <br> <span id="CoalCost"></span>$</button><br>
+    <button class ="upgrades" id="miner" onclick="buyWorker('')">  <br> <span id="CoalCost"></span>$</button><br>
 
 
     <button class ="upgrades" id="miner" onclick="buyWorker('workingclass')"> Normal Dealer <br> <span id="WorkingClassCost">50</span>$</button>
-    <button class ="upgrades" id="miner" onclick="buyWorker()"> Gold miner <br> <span id="GoldCost"></span>$</button><br>
+    <button class ="upgrades" id="miner" onclick="buyWorker('')">  <br> <span id="GoldCost"></span>$</button><br>
 
 
     <button class ="upgrades" id="miner" onclick="buyWorker('advanced')"> Advanced Dealer <br> <span id="AdvancedCost">500</span>$</button>
-    <button class ="upgrades" id="miner" onclick="buyWorker()"> Diamond miner <br> <span id="DiaCost"></span>$</button><br>
+    <button class ="upgrades" id="miner" onclick="buyWorker('')">  <br> <span id="DiaCost"></span>$</button><br>
 
 </body>
 </html>

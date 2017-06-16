@@ -10,6 +10,8 @@
   margin-left: 20px;
   margin-top: 10px;
   float:left;
+  background: transparent;
+  border: none !important;
 }
 
 .upgrades {
@@ -19,8 +21,8 @@
 }
 
 .spinner {
-  width: 300px;
-  height: 200px;
+  width: 280px;
+  height: 180px;
   float: left;
   padding-top: -500px;
 }
@@ -47,4 +49,28 @@ p {
  #center {
    margin-left:100px;
    float:left;
+ }
+
+ /*Spinner animator */
+
+ #spinn {
+     background-image: url("img/spinner.gif");
+     animation-name: spinner;
+     animation-duration: 7s;
+     animation-direction: normal;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;;
+ }
+
+ @keyframes spinner {
+     0% {
+
+     }
+     50% {
+
+     }
+     100% {
+
+         transform: rotate(18000deg);
+     }
  }
