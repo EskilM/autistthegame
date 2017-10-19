@@ -3,6 +3,7 @@ var dollars = 0;
 function cookieClick(number){
     dollars = dollars + number;
     document.getElementById("dollars").innerHTML = dollars;
+    spinn(15);
 };
 
 var homeless = 0;
@@ -80,6 +81,17 @@ function showWorkers() {
   if (gettos != 0) {
         document.getElementById("stats").innerHTML += "Getto: " + gettos + "<br />";
   }
+}
+
+
+
+
+function spinn(hastighet) {
+  var r=0;
+    r += hastighet;
+
+    $('#spinn').css('transform', 'rotate(' + r + 'deg)');
+    requestAnimationFrame(spinn(hastighet));
 }
 
 
